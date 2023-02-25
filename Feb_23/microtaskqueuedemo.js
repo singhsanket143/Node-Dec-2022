@@ -9,8 +9,8 @@ function createPromise() {
 
 
 let p = createPromise();
-p.then(function fulfillHandler1(value) {
-    console.log("we fulfilled1 with a value", value);
+p.then(function fulfillHandler1(n) {
+    console.log("we fulfilled1 with a value", n);
 }, function rejectHandler(value) {
     console.log("we reject1 with a value", value);
 });
